@@ -1,0 +1,7 @@
+{
+  "name": "automotive-ri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

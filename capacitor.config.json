@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "automotive-ri",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
