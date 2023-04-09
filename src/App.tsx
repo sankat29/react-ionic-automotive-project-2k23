@@ -1,5 +1,12 @@
-import { IonApp, IonContent, setupIonicReact } from "@ionic/react";
-
+import {
+  IonApp,
+  IonContent,
+  IonHeader,
+  IonTitle,
+  IonToolbar,
+  setupIonicReact,
+} from "@ionic/react";
+import React from "react";
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -18,15 +25,25 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+// import H1 from "./components/H1";
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonContent>
-      <h1>Hello World</h1>
-    </IonContent>
-  </IonApp>
+  <React.Fragment>
+    <IonApp>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Title</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent></IonContent>
+    </IonApp>
+  </React.Fragment>
 );
 
 export default App;
+
+//  <IonApp>
+//    <IonContent>{/* <H1 title="Hello World    " /> */}</IonContent>
+//  </IonApp>;
